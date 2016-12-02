@@ -1,0 +1,285 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +5V #PWR01
+U 1 1 58417B83
+P 1300 1300
+F 0 "#PWR01" H 1300 1150 50  0001 C CNN
+F 1 "+5V" H 1300 1440 50  0000 C CNN
+F 2 "" H 1300 1300 50  0000 C CNN
+F 3 "" H 1300 1300 50  0000 C CNN
+	1    1300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 58417C3A
+P 2050 1250
+F 0 "L1" V 2000 1250 50  0000 C CNN
+F 1 "INDUCTOR" V 2150 1250 50  0000 C CNN
+F 2 "" H 2050 1250 50  0000 C CNN
+F 3 "" H 2050 1250 50  0000 C CNN
+	1    2050 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MMBT3904 Q2
+U 1 1 58417D22
+P 2700 2100
+F 0 "Q2" H 2900 2175 50  0000 L CNN
+F 1 "MMBT3904" H 2900 2100 50  0000 L CNN
+F 2 "SOT-23" H 2900 2025 50  0000 L CIN
+F 3 "" H 2700 2100 50  0000 L CNN
+	1    2700 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D1
+U 1 1 58417D79
+P 3400 1250
+F 0 "D1" H 3400 1350 50  0000 C CNN
+F 1 "D" H 3400 1150 50  0000 C CNN
+F 2 "" H 3400 1250 50  0000 C CNN
+F 3 "" H 3400 1250 50  0000 C CNN
+	1    3400 1250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1300 1750 1300
+Wire Wire Line
+	1750 1300 1750 1250
+Wire Wire Line
+	2350 1250 3250 1250
+Connection ~ 2800 1250
+$Comp
+L C C2
+U 1 1 58417EAE
+P 3950 1650
+F 0 "C2" H 3975 1750 50  0000 L CNN
+F 1 "1u" H 3975 1550 50  0000 L CNN
+F 2 "" H 3988 1500 50  0000 C CNN
+F 3 "" H 3950 1650 50  0000 C CNN
+	1    3950 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 4950 1250 2    60   Input ~ 0
+SilverAnode
+Wire Wire Line
+	3950 1500 3950 1250
+Connection ~ 3950 1250
+Wire Wire Line
+	3550 1250 4950 1250
+Wire Wire Line
+	4400 1250 4400 1350
+$Comp
+L R R6
+U 1 1 584180C1
+P 2800 1600
+F 0 "R6" V 2880 1600 50  0000 C CNN
+F 1 "50" V 2800 1600 50  0000 C CNN
+F 2 "" V 2730 1600 50  0000 C CNN
+F 3 "" H 2800 1600 50  0000 C CNN
+	1    2800 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1250 2800 1450
+Wire Wire Line
+	2800 1750 2800 1900
+$Comp
+L Earth #PWR02
+U 1 1 58418139
+P 2800 3700
+F 0 "#PWR02" H 2800 3450 50  0001 C CNN
+F 1 "Earth" H 2800 3550 50  0001 C CNN
+F 2 "" H 2800 3700 50  0000 C CNN
+F 3 "" H 2800 3700 50  0000 C CNN
+	1    2800 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 1800 3950 2300
+Wire Wire Line
+	2800 2300 4400 2300
+Wire Wire Line
+	2800 2300 2800 3700
+$Comp
+L R R5
+U 1 1 58418180
+P 4400 1500
+F 0 "R5" V 4480 1500 50  0000 C CNN
+F 1 "5.6M" V 4400 1500 50  0000 C CNN
+F 2 "" V 4330 1500 50  0000 C CNN
+F 3 "" H 4400 1500 50  0000 C CNN
+	1    4400 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 584181C5
+P 4400 2000
+F 0 "R4" V 4480 2000 50  0000 C CNN
+F 1 "320k" V 4400 2000 50  0000 C CNN
+F 2 "" V 4330 2000 50  0000 C CNN
+F 3 "" H 4400 2000 50  0000 C CNN
+	1    4400 2000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4400 1250
+Wire Wire Line
+	4400 1650 4400 1850
+Wire Wire Line
+	4400 2300 4400 2150
+Connection ~ 3950 2300
+Text GLabel 1850 2100 0    60   Input ~ 0
+PWM_BOOST_PIN3
+$Comp
+L R R7
+U 1 1 584182E9
+P 2200 2100
+F 0 "R7" V 2280 2100 50  0000 C CNN
+F 1 "1k" V 2200 2100 50  0000 C CNN
+F 2 "" V 2130 2100 50  0000 C CNN
+F 3 "" H 2200 2100 50  0000 C CNN
+	1    2200 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 2100 2050 2100
+Wire Wire Line
+	2350 2100 2500 2100
+Text GLabel 4750 1750 2    60   Input ~ 0
+ADC_1
+Connection ~ 4400 1750
+Wire Wire Line
+	4400 1750 4750 1750
+Text GLabel 5700 2400 2    60   Input ~ 0
+GraphiteCathode
+$Comp
+L MMBT3904 Q1
+U 1 1 584192C2
+P 5400 3050
+F 0 "Q1" H 5600 3125 50  0000 L CNN
+F 1 "MMBT3904" H 5600 3050 50  0000 L CNN
+F 2 "SOT-23" H 5600 2975 50  0000 L CIN
+F 3 "" H 5400 3050 50  0000 L CNN
+	1    5400 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 58419308
+P 4600 3050
+F 0 "R2" V 4680 3050 50  0000 C CNN
+F 1 "12k" V 4600 3050 50  0000 C CNN
+F 2 "" V 4530 3050 50  0000 C CNN
+F 3 "" H 4600 3050 50  0000 C CNN
+	1    4600 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5841948F
+P 4050 3050
+F 0 "R1" V 4130 3050 50  0000 C CNN
+F 1 "12k" V 4050 3050 50  0000 C CNN
+F 2 "" V 3980 3050 50  0000 C CNN
+F 3 "" H 4050 3050 50  0000 C CNN
+	1    4050 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 3050 5200 3050
+Wire Wire Line
+	4200 3050 4450 3050
+$Comp
+L C C1
+U 1 1 5841995D
+P 4350 3350
+F 0 "C1" H 4375 3450 50  0000 L CNN
+F 1 "100nF" H 4375 3250 50  0000 L CNN
+F 2 "" H 4388 3200 50  0000 C CNN
+F 3 "" H 4350 3350 50  0000 C CNN
+	1    4350 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3200 4350 3050
+Connection ~ 4350 3050
+$Comp
+L R R3
+U 1 1 58419B32
+P 5500 3600
+F 0 "R3" V 5580 3600 50  0000 C CNN
+F 1 "200" V 5500 3600 50  0000 C CNN
+F 2 "" V 5430 3600 50  0000 C CNN
+F 3 "" H 5500 3600 50  0000 C CNN
+	1    5500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3250 5500 3450
+Wire Wire Line
+	4350 3500 4350 3750
+Wire Wire Line
+	4350 3750 5500 3750
+Text GLabel 2400 3050 0    60   Input ~ 0
+PWM_CURRENT_LIMIT_PIN5
+Wire Wire Line
+	2400 3050 3900 3050
+Wire Wire Line
+	2800 3650 4350 3650
+Connection ~ 2800 3700
+Connection ~ 4350 3650
+Wire Wire Line
+	5500 2850 5500 2400
+Wire Wire Line
+	5500 2400 5700 2400
+Text GLabel 5950 3400 2    60   Input ~ 0
+ADC_CURRENT_SENSING
+Wire Wire Line
+	5950 3400 5500 3400
+Connection ~ 5500 3400
+$EndSCHEMATC

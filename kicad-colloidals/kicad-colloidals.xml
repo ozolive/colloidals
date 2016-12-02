@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/olivier/perso/colloidals/kicad-colloidals/kicad-colloidals.sch</source>
+    <date>ven. 02 déc. 2016 15:33:48 CET</date>
+    <tool>Eeschema 4.0.2+dfsg1-2~bpo8+1-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>kicad-colloidals.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="L1">
+      <value>INDUCTOR</value>
+      <libsource lib="device" part="INDUCTOR"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58417C3A</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>MMBT3904</value>
+      <footprint>SOT-23</footprint>
+      <libsource lib="transistors" part="MMBT3904"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58417D22</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>D</value>
+      <libsource lib="device" part="D"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58417D79</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>1u</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58417EAE</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>50</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>584180C1</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>5.6M</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58418180</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>320k</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>584181C5</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>1k</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>584182E9</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>MMBT3904</value>
+      <footprint>SOT-23</footprint>
+      <libsource lib="transistors" part="MMBT3904"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>584192C2</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>12k</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58419308</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>12k</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5841948F</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100nF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5841995D</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>200</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58419B32</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D">
+      <description>Diode</description>
+      <footprints>
+        <fp>Diode_*</fp>
+        <fp>D-Pak_TO252AA</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="INDUCTOR">
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">INDUCTOR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="transistors" part="MMBT3904">
+      <description>40V Vce, 0.2A Ic, NPN, Small Signal Transistor, SOT-23</description>
+      <docs>http://www.nxp.com/documents/data_sheet/MMBT3904.pdf</docs>
+      <footprints>
+        <fp>SOT-23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">MMBT3904</field>
+        <field name="Footprint">SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="transistors">
+      <uri>/usr/share/kicad/library/transistors.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="2" name="PWM_CURRENT_LIMIT_PIN5">
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="3" name="GraphiteCathode">
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="4" name="ADC_1">
+      <node ref="R4" pin="1"/>
+      <node ref="R5" pin="2"/>
+    </net>
+    <net code="5" name="Net-(Q2-Pad1)">
+      <node ref="Q2" pin="1"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="6" name="PWM_BOOST_PIN3">
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="7" name="ADC_CURRENT_SENSING">
+      <node ref="R3" pin="1"/>
+      <node ref="Q1" pin="2"/>
+    </net>
+    <net code="8" name="Net-(C1-Pad2)">
+      <node ref="R3" pin="2"/>
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="9" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="10" name="+5V">
+      <node ref="L1" pin="1"/>
+    </net>
+    <net code="11" name="Net-(D1-Pad2)">
+      <node ref="R6" pin="1"/>
+      <node ref="L1" pin="2"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="12" name="SilverAnode">
+      <node ref="D1" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="13" name="Net-(Q2-Pad3)">
+      <node ref="Q2" pin="3"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="14" name="Earth">
+      <node ref="R4" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="Q2" pin="2"/>
+    </net>
+  </nets>
+</export>
