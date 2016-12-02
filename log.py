@@ -6,7 +6,11 @@ import csv
 import os.path
 import struct
 
-process_log = 'process_log.csv'
+import datetime
+
+process_log = 'process_log_'+datetime.datetime.now().strftime("%Y-%m-%d_%H:%M")+'.csv'
+
+print process_log
 
 
 BAUD_RATE=9600
@@ -99,7 +103,7 @@ def write_log(fname,outstr):
         fd = open(fname, "ab")
     else:
         fd = open(fname, "wb")
-        fd.write("time,ma_min,ma_avg,ma_max,ma_var_avg,ma_cur,ma_pwm_avg,ma_pwm_var_avg,outv_avg,ma,ppm\n")
+        fd.write("time,ma_min,ma_avg,ma_max,ma_var_avg,ma_cur,ma_pwm_avg,ma_pwm_var_avg,v_target,outv_avg,ma,ohms,ppm\n")
     fd.write(str(int(time.time())) + ',' + outstr + "\n")
     fd.close()
 
