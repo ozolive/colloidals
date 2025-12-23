@@ -6,7 +6,7 @@ It is a project based on Arduino-like platform, mine uses cheap Arduino Uno but 
 
 There are schematics in the pdf file. It is basically a boost dc-dc converter at anode, coupled with a microcurrent regulator at cathode,each regulated by software (adc feedback), the most important being microcurrent feedback (measuring small <1v voltage drop through big value resistor).
 
-The current is integrated into colombs (moles of électrons) and translated to ppm by Arduino software (the .ino file) and stops at #defined level . Many #defines on top of that .ino files for jar volume, required ppm, max current, pin used, resistors values, etc .. flash after change with Arduino ide at ease.
+The current is integrated into Coulombs (moles of électrons) and translated to ppm by Arduino software (the .ino file) and stops at #defined ppm level . Many #defines on top of that .ino files for jar volume, required ppm, max current, pin used, resistors values, etc .. flash after change with Arduino ide at ease.
 
 The log.py, by opening and reading the Arduino serial port (though usb) on host computer, starts/reset the process on Arduino side, and records all data on current folder as timestamped .csv file. Run it in terminal, ms windows untested.
 
